@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Personal Portfolio</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <nav>
+  <ul id="tabs" class="nav">
+    <li class="border click"><a href="#contact">Contact</a></li>
+    <li class="border click"><a href="#portfolio">Portfolio</a></li>
+    <li class="border click"><a href="#about">About</a></li>
+    <li class = "click" style="float: left"><a href="#home" class="active">Home</a></li>
+  </ul>
+</nav>
+<div id="content" class="container-fluid">
+  <div id="home" class="text-center section">
+    <h1>Jason Ai
+    </h1>
+  </div>
+  <div id="about" class="text-center section">
+    <p>Electrical Engineering and Computer Science student at the University of California, Berkeley. <br>Originally from Gainesville, Florida. Exploring deep learning, app building, and virtual reality.<br><br><br><br></p>
+    <a href="#" id ="resume">Resume</a>
+  </div>
+  <div id="portfolio" class="container section">
+    <div id="ppic"><h1>Portfolio</h1></div>
+    <p class="text-center caption">Click on images to explore</p>
+    <div id="Bearmaps" class="row">
+      <div class="col-xs-6" style="padding: 35px 10px 10px 0px">
+        <figure>
+          <figcaption class = "text-center">Bearmaps</figcaption>
+          <img src="http://i61.photobucket.com/albums/h75/Jason_Ai/bearmaps_zpsv0ekrfld.png" alt="Bearmaps" height = "200px" width = "350px">
+        </figure>
+      </div>
+      <div class="col-xs-6">
+        <p class = "text-center">Bearmaps is an application used for mapping and routing that I created during my data structures course. It has similar functionality as Google maps and covers the East Bay area.</p>
+      </div>
+    </div>
+    <div class="expand" id = "maps">
+      <div class = "row">
+        <div class = "col-xs-8">
+        <p>For rastering, a quadtree structure (each level containing images of different pixels per distance) was used allowing the user to both drag the map around and change the detail of the area shown by zooming in and out.</p>
+        </div>
+        <div class = "col-xs-4">
+          <img src="http://web.eecs.umich.edu/~qstout/pap/SC97quadtree.gif" height="200px">
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "col-xs-4">
+          <img src=https://upload.wikimedia.org/wikipedia/commons/9/98/AstarExampleEn.gif height="200px">
+        </div>
+        <div class = "col-xs-8">
+        <p>Data on all roads and pathways was deserialized from an XML file in order to construct a graph of all drivable roads. To draw routes, the A* algorithm was used with the straight line distance as a heuristic.</p>
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "col-xs-8">
+          <p>Locations were also read from the XML file and location finding was implemented by storing all the location names in a trie which allowed autocomplete. Searching for locations would reveal them on the map.</p>
+        </div>
+        <div class = "col-xs-4">
+          <img src="http://datastructur.es/sp16/materials/proj/proj3/selection.JPG" width = "300px">
+        </div>
+      </div>
+    </div>
+    <div id="research" class="row">
+      <div class="col-xs-6" style="padding: 35px 10px 10px 0px">
+        <figure>
+          <figcaption class = "text-center">Research</figcaption>
+         <img src="http://static.panoramio.com/photos/large/470601.jpg" height ="200px" width = "350px" alt="Research">
+        </figure>
+      </div>
+      <div class="col-xs-6">
+        <p class = "text-center">I worked in the Scalable Software Systems lab at the University of Florida. My work was in deep learning, mainly computer vision.<br><a href="http://www.s3lab.ece.ufl.edu/" target="_blank">learn about the lab</a></p>
+      </div>
+    </div>
+    <div class = "expand" id="research">
+      <div class = "row">
+        <div class = "col-xs-8">
+          <p>A computer was trained to count the number of citrus in a picture, the images being supplied by the University's Department of Agriculture. The first rough method was to segment the image into many different subimages and classify each subimage as having citrus or not having citrus using the cifar-10 model of CNN, implemented in Keras run over Tensorflow. This was replaced by a more accurate method, written in Caffe, of using fast R-CNN to identify all regions of CNN and returning the total number of regions, and doing so quickly by using the feature map given by the first convolution to identify regions of interest.</p>
+        </div>
+        <div class = "col-xs-4">
+          <img src="http://i61.photobucket.com/albums/h75/Jason_Ai/000001_zpstqdgrjfz.jpg" height = "200px">
+          <img src="http://3.bp.blogspot.com/-aM69pqJLP9k/VT2927f8WmI/AAAAAAAAAv8/7S49kEq5Ss0/s1600/%E6%93%B7%E5%8F%96.PNG" width ="250px">
+        </div>
+      </div>
+      <div class = "row">
+        <div class = "col-xs-4">
+          <img src ="http://cdn.broadcastbeat.com/wp-content/uploads/2013/12/cloudwaves.jpg" width = "200px">
+        </div>
+        <div class = "col-xs-8">
+          <p>The Deep Cloud project is a web app in development to apply all models created from research, including citrus counting. The website provides friendly UI such that users can train their own models or use pretrained models without knowledge of deep learning. The subsequent models are saved and stored on our internal server so that the user can access them later to run inference.
+            As part of the deep learning subteam, I wrote python scripts to load data, build the model, and export the model architecture and weights in HDF5 and protobuff formats to our server. I also connected with the web team and worked on modifying callback functions in order to send ETA, loss, and validation loss values in JSON format during training.
+        </div>
+      </div>
+    </div>
+    <div id = "other" class = "row">
+      <div class="col-xs-6" style= "padding-left: 0">
+        <figure>
+         <figcaption class = "text-center">Other</figcaption>
+          <img src="http://www.calbaptist.edu/files/5714/1200/8135/computer_science_minor_banner.jpg" alt="Other" width ="350px" height ="200px">
+        </figure>
+      </div>
+      <div class="col-xs-6">
+        <p class="text-center">Check out my other miscellaneous projects and tasks here</p>
+        
+      </div>
+    </div>
+    <div class="expand container" id = "abstract">
+      <h2 class="text-center">Miscellaneous</h2>
+      <div class= "container" id = "parallax">
+        <div class="gutter"></div>
+        <div class ="floating column dheight leftup">
+        </div>
+        <div class ="floating dwidth leftup">
+          <h2 class="text-center">Website</h2>
+          <p class="text-center">You're looking at it right now! This has been my way of experimenting with web development as well as things such as Masonry and Parallax scrolling.</p>
+        </div>
+        <div class = "floating dheight rightup">
+          <h2 class="text-center">RC car</h2>
+          <p class="text-center">Built an rc car that can be controlled by voice commands through microphone built using filters and op-amps. Used MSP-430 and classified voice commands with PCA.
+        </div>
+        <div class ="floating rightup" style="height: 410px">
+        </div>
+        <div class = "floating leftup">
+          <h2 class="text-center">Scheme</h2>
+          <p class = "text-center">Built Scheme(Lisp dialect) interpreter with Python. Added tail calling.</p>
+        </div>
+        <div class ="floating dwidth dheight right">
+          <h2 class="text-center">Text Editor</h2>
+          <p class="text-center">Implemented at "Notebook" style application that allows for typing/backspace, copy/paste, undo/redo, cursor, scroll, and dynamic window resizing. A circular doubly linked list with sentinal nodes was the primary structure used.</p>
+        </div>
+        <div class ="floating dheight left">
+        </div>
+        <div class ="floating theight rightbot">
+          <h2 class="text-center">CalSol</h2>
+          <p class="text-center">Club that builds solar powered cars. Worked with hardware by surface-mounting pcbs for the dashboard and other components. For software, worked on telemetry which used JFreeCharts to monitor and display important data about the car such as temperature, windspeed, friction, and velocity.
+        </div>
+        <div class ="floating rightbot dwidth">
+        </div>
+        <div class ="floating bot">
+          <h2 class="text-center">Ants vs. Some-bees</h2>
+          <p class="text-center">Created simple Plants vs. Zombies parody with leaf throwing and multiple ant types.
+        </div>
+      </div>
+    </div>
+    </div>
+  <div id="contact" class = "section">
+    <div id="header"><h1 style="color: white">Contact</h1>
+      <div class="row">
+        <div id="logos" class="col-xs-6">
+          <i class="fa fa-github-square fa-4x" aria-hidden="true"></i>
+          <a href="https://www.linkedin.com/in/jason-ai-0296a9112" target="_blank"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
+          <a href="http://codepen.io/whalish/" target="_blank"><i class="fa fa-codepen fa-4x" aria-hidden="true"></i></a>
+          <a href="mailto:jasonainc@berkeley.edu?Subject=Website%20Inquiry"><i class="fa fa-envelope-square fa-4x" aria-hidden="true"></i></a>
+          <a href= "https://www.facebook.com/jason.ai.9" target="_blank"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a>
+        </div>
+        <div id="text" class="col-xs-6">Feel free to reach out to me through any of these platforms. I would love to hear from you.</div>
+      </div>
+    </div>
+    
+    <div id="filter"></div>
+    <div id="im">
+      <img id="night" src="http://www.hdfbcover.com/randomcovers/covers/City-night-fb-cover-photo.jpg"/>
+    </div>
+  </div>
+</div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.0/imagesloaded.pkgd.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.0/masonry.pkgd.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

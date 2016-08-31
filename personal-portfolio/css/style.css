@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  width: 100%;
+}
+
+.section>.row {
+  border-top: 1px solid black;
+}
+
+#Bearmaps {
+  border: none;
+}
+
+body, html {
+  width: 100%;
+}
+
+#tabs {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: hsl(240, 100%, 5%);
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 58px;
+  z-index: 9999;
+  border-bottom: 1px groove black;
+}
+
+.floating p{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#content {
+  left: 0px;
+  position: absolute;
+  overflow: auto;
+  width: 100%;
+  padding: 0;
+  top: 58px;
+}
+
+#home {
+  background: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSj3VSfnVw0kSDlxaPfGdT3c-xOsz-9OD8EBtTwfcNNirP9Q3YU");
+  background-size: 100% 100%;
+  padding: 120px 0px 120px 0px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.section h1 {
+  color: white;
+}
+
+#about {
+  background-color: hsl(240, 100%, 5%);
+  padding-bottom: 100px;
+  border-bottom: 2px groove white;
+}
+
+#about p {
+  color: white;
+  padding: 0;
+}
+
+#resume {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+#resume:hover {
+  border: none;
+  background-color: white;
+  color: hsl(240, 100%, 5%);
+}
+
+#portfolio {
+  padding: 0;
+}
+#ppic {
+  background: url("http://miriadna.com/desctopwalls/images/max/Golden-Gate-drown-in-fog.jpg");
+  background-size: 100% 100%;
+  padding: 100px 0px 100px 0px;
+  border-bottom: 1px solid black;
+}
+
+#tabs li {
+  float: right;
+  display: inline;
+}
+#tabs li a {
+  display: block;
+  color: white;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+/* .border {
+  border-left: 1px groove white;
+} */
+
+#tabs li a.active{
+}
+
+#tabs li a.hover{
+}
+
+.section {
+  padding: 70px 0px 10px 0px;
+  width: 100%;
+}
+
+#contact {
+  position: relative;
+  height: 350px;
+  border-top: 1px solid black;
+}
+
+#research {
+  background-color: silver;
+}
+
+
+#other {
+  background-color: dimgray;
+}
+
+
+.col-xs-6>p {
+  padding-top: 160px;
+}
+
+p {
+  padding: 50px 10px 30px 10px;
+}
+
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+.caption {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+figure img {
+  -webkit-transition: all .25s ease;
+     -moz-transition: all .25s ease;
+       -o-transition: all .25s ease;
+          transition: all .25s ease;
+}
+ 
+figure img:hover {
+  -webkit-filter: blur(1px);
+  cursor: pointer;
+}
+
+figure {
+  width: 350px;
+  padding: 40px;
+}
+
+
+.row {
+  padding: 0;
+  width: 100%;
+  left: 0;
+  margin: 0;
+}
+
+.expand {
+  padding: 0 60px 30px 60px;
+}
+
+.expand .row {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.expand .row div {
+  padding: 0;
+  margin: 0;
+}
+#abstract {
+  background-image: url("http://i61.photobucket.com/albums/h75/Jason_Ai/3-d-white-blocks_zpseimxdjz9.png");
+  padding: 0 20 0 20;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 1100px;
+}
+#parallax {
+  padding: 0;
+  width: 100%;
+}
+
+.floating {
+  box-sizing: border-box;
+  height: 200px;
+  width: 16%;
+  background: #e6e6e6;
+  float: left;
+  margin-top: 10px;
+  border-radius: 1px;
+  margin-bottom: 10px;
+}
+.dwidth {
+  width: 37%;
+  background: white;
+}
+
+.gutter {
+  width: 5%;
+}
+
+.dheight {
+  height: 360px;
+  margin-top: 20px;
+  background: #f2f2f2;
+}
+
+.theight {
+  height: 500px;
+  margin-top: 50px;
+  background: whitesmoke;
+}
+.leftbot{
+  box-shadow: 2px -3px 10px 3px grey;
+}
+
+.rightbot {
+  box-shadow: -2px -3px 10px 3px grey;
+}
+.rightup {
+  box-shadow: -2px 3px 10px 3px grey;
+}
+
+.leftup {
+  box-shadow: 2px 3px 10px 3px grey;
+}
+
+.bot {
+  box-shadow: 0 -5px 10px 3px grey;
+}
+
+.left {
+  box-shadow: 3px 0 10px 3px grey;
+}
+
+.right {
+  box-shadow: -2px 0 10px 3px grey;
+}
+
+#filter,
+#im,#header {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#header {
+  z-index: 2;
+  padding: 50px;
+  color: white;
+}
+
+#filter {
+  z-index: 1;
+  background-color: black;
+  opacity: .7;
+}
+
+#night {
+  height: 100%;
+  width: 100%;
+}
+
+#text {
+  margin-top: 30px;
+  border-left: 1px solid white;
+  height:160px;
+  padding: 50px 0 0 40px;
+}
+
+
+#logos {
+  padding-top: 70px;
+  padding-left: 80px;
+}
+
+#header a {
+  color: white;
+}
+
+i {
+  margin-left: 40px;
+}
+
