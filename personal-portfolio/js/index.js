@@ -58,7 +58,7 @@ $(document).on('scroll', function(event){
     console.log($(".caption").css("color"));
     if ($(".caption").css("color") === "rgb(255, 255, 255)"){
       $(".caption").css("color", "black");
-      $(".caption").effect("bounce", {times: 7, distance: 30}, "slow");
+      $(".caption").effect("bounce", {times: 7, distance: 100}, "slow");
     }
   }
 });
@@ -132,29 +132,29 @@ function rgbToHsl(r, g, b){
 $(".fa-github-square").hover(function() {
   var $text = document.getElementById("text");
   $text.style.paddingTop = "60px";
-  $text.innerHTML = "Feel free to fork me on github as I begin to push (in progress)";
+  $text.innerHTML = "Feel free to fork me on github.";
 });
 
 $(".fa-facebook-square").hover(function() {
   var $text = document.getElementById("text");
   $text.style.paddingTop = "60px";
-  $text.innerHTML = "Feel free to add or message me on Facebook";
+  $text.innerHTML = "Feel free to add or message me on Facebook.";
 });
 
 $(".fa-codepen").hover(function() {
   var $text = document.getElementById("text");
   $text.style.paddingTop = "60px";
-  $text.innerHTML = "Check out some of my webdev projects, including this website";
+  $text.innerHTML = "Check out some of my webdev projects, including this website.";
 });
 
 $(".fa-linkedin-square").hover(function() {
   var $text = document.getElementById("text");
   $text.style.paddingTop = "60px";
-  $text.innerHTML = "Feel free to connect with me on Linkedin";
+  $text.innerHTML = "Feel free to connect with me on Linkedin.";
 });
 
 $(".fa-envelope-square").hover(function() {
   var $text = document.getElementById("text");
   $text.style.paddingTop = "30px";
-  $text.innerHTML = "Please message me with an personal or professional inquiries. I also am part of the industrial relations committee of HKN at Berkeley. If you would like to contact me with questions about partnering with HKN to host a recruiting event, please email jasonainc@hkn.eecs.berkeley.edu instead";
+  $text.innerHTML = "Please message me with an personal or professional inquiries. I also am part of the industrial relations committee of HKN at Berkeley. If you would like to contact me with questions about partnering with HKN to host a recruiting event, please email jasonainc@hkn.eecs.berkeley.edu instead.";
 });
